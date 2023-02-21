@@ -18,4 +18,7 @@ export class DemoGoodsEntity extends BaseEntity {
 
   @Column({ comment: '分类 0-衣服 1-鞋子 2-裤子', type: 'tinyint', default: 0 })
   type: number;
+
+  @Column({ comment: '描述', nullable: true })
+  desc: string;
 }
